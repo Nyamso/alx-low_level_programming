@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * this is a program
- * that prints the size of various
+ * main - program
+ * return - 0 
+ *
  */
 
 int main(void)
