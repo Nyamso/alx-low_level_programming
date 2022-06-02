@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**main program
- * script tha print words
- * titled Programming is like building a multilingual puzzles
- * and returns a 0
+ *script tha print words
+ *titled Programming is like building a multilingual puzzles
  */
 
 int main(void)
