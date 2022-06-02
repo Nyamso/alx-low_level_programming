@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-/**main program
- *script tha print words
- *titled Programming is like building a multilingual puzzles
+/** main program
+ * Script that prints words
+ * titled Programming is like building a multilingual puzzles
  */
 
 int main(void)
