@@ -1,7 +1,8 @@
 #include <stdio.h>
-
-/* main program
- * Script that prints titled Programming is like building a multilingual puzzles
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
