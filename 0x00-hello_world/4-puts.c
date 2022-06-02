@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-/**main program */
+/**main program
+ * script tha print words
+ * titled Programming is like building a multilingual puzzles
+ * and returns a 0
+ */
 
 int main(void)
 {
