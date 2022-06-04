@@ -3,6 +3,7 @@
 /**
  * main - program that prints all single digit numbers
  *
+ * Return: 0 (Success)
  */
 
 int main(void)
