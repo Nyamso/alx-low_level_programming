@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - program that prints all possible combinations of two two-digit numbers
- * Retturns: 0 (Success)
+ * main -program that prints all possible combinations
+ * of two two-digit numbers
+ * Returns: 0 (Success)
  *
  */
 
@@ -26,7 +27,7 @@ int main(void)
 					putchar(num1);
 					putchar(num2);
 
-					if (!((n == '9' && m == '8') &&(num1 == '9' && num2 == '9')))
+					if (!((n == '9' && m == '8') && (num1 == '9' && num2 == '9')))
 					{
 						putchar(',');
 						putchar(' ');
