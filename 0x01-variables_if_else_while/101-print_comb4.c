@@ -11,9 +11,9 @@ int main(void)
 {
 	int n, m, o;
 	{
-		for (o ='0'; o <='9'; o++)
+		for (o = '0'; o <= '9'; o++)
 		{
-			for (m = ( 0 + 1); m <= '9'; m++)
+			for (m = (0 + 1); m <= '9'; m++)
 			{
 				for (n = (m + 1); n <= '9'; n++)
 				{
@@ -23,7 +23,7 @@ int main(void)
 						putchar(m);
 						putchar(n);
 
-						if ( m != '8' || n != '9')
+						if (m != '8' || n != '9')
 						{
 							putchar(',');
 							putchar(' ');
@@ -33,7 +33,6 @@ int main(void)
 			}
 		}
 	}
-	
 	putchar('\n');
 	return (0);
 }
