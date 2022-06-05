@@ -28,16 +28,16 @@ int main(void)
 
 					if (!((n == '9' && m == '8') &&(num1 == '9' && num2 == '9')))
 					{
-						putchar(,);
-						putchar( );
+						putchar(',');
+						putchar(' ');
 					}
 				}
 				num2 = '0';
 			}
 		}
 	}
-	putchar ('\n');
+	putchar('\n');
 
-	retrun (0);
+	return (0);
 }
 

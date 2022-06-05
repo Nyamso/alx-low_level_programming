@@ -16,14 +16,17 @@ int main(void)
 			{
 				for ( n = (m + 1); n <= '9'; n++)
 				{
-					putchar(o);
-					putchar(m);
-					putchar(n);
-
-					if ( o != '7'| m != '8'| n != '9')
+					if ( o  < m && m < n)
 					{
-						putchar(',');
-						putchar(' ');
+						putchar(o);
+						putchar(m);
+						putchar(n);
+
+						if ( m != '8' || n != '9')
+						{
+							putchar(',');
+							putchar(' ');
+						}
 					}
 				}
 			}
@@ -31,7 +34,6 @@ int main(void)
 	}
 	
 	putchar('\n');
-	
 	return (0);
 }
 
