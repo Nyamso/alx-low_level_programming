@@ -10,26 +10,21 @@
 int main(void)
 {
 	int n, m, o;
-	{
-		for (n = 0; n < 8; n++)
-		{
-			for (m = (n + 1); m < 9; m++)
-			{
-				for (o = (m + 1); o <= 9; o++)
-				{
-					if (o < m && m < n)
-					{
-						putchar(o);
-						putchar(m);
-						putchar(n);
 
-						if (m != '8' || n != '9')
-						{
-							putchar(',');
-							putchar(',');
-						}
-					}
-				}
+	for (n = 0; n < 8; n++)
+	{
+		for (m = (n + 1); m < 9; m++)
+		{
+			for (o = (m + 1); o <= 9; o++)
+			{
+				putchar((o % 10) + '0');
+				putchar((m % 10) + '0');
+				putchar((n % 10) + '0');
+
+				if (n == 7 && m == 8 && o == 9)
+				
+					putchar(',');
+					putchar(' ');
 			}
 		}
 	}
