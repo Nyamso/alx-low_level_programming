@@ -3,7 +3,7 @@
 /**
  * main - program that prints all possible combinations
  * of two two-digit numbers
- * Returns: 0 (Success)
+ * Return: 0 (Success)
  *
  */
 
@@ -22,7 +22,7 @@ int main(void)
 			putchar((m / 10) + '0');
 			putchar((m % 10) + '0');
 			
-			if(n == 98 && m == 99)
+			if (n == 98 && m == 99)
 				continue;
 			putchar(',');
 			putchar(' ');
