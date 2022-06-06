@@ -22,6 +22,7 @@ int main(void)
 				putchar((n % 10) + '0');
 
 				if (n == 7 && m == 8 && o == 9)
+					continue;
 				
 					putchar(',');
 					putchar(' ');
