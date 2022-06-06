@@ -24,8 +24,8 @@ int main(void)
 				if (n == 7 && m == 8 && o == 9)
 					continue;
 				
-					putchar(',');
-					putchar(' ');
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
