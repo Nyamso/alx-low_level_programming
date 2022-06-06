@@ -11,11 +11,11 @@ int main(void)
 {
 	int n, m, o;
 	{
-		for (o = '0'; o <= '9'; o++)
+		for (n = 0; n < 8; n++)
 		{
-			for (m = (0 + 1); m <= '9'; m++)
+			for (m = n + 1; m < 9; m++)
 			{
-				for (n = (m + 1); n <= '9'; n++)
+				for (o = m + 1); o <= 9; o++)
 				{
 					if (o < m && m < n)
 					{
