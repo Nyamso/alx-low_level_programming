@@ -3,8 +3,8 @@
 /**
  * add - a function that adds two integers and
  * returns the result.
- * @n: two integer arguments
- * @m: two integer arguments
+ * @n: integer arguments
+ * @m: integer arguments
  */
 
 int add(int n, int m)
