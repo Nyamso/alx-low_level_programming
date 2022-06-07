@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * add - a function that adds two integers and
- * returns the result.
+ * add - a function that adds two integers 
  * @n: integer arguments
- * Return: 0 integer arguments
+ * @m: integer arguments
  */
 
 int add(int n, int m)
