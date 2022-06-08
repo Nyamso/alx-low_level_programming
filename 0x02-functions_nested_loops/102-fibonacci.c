@@ -15,13 +15,13 @@ int main(void)
 
 	for (counter = 1; counter <= (count / 2); counter++)
 	{
-		printf("%li %li, ", a, b);
+		printf("%li %li, ", a, b,);
 		a += b;
 		b += a;
 	}
 	if (count % 2 == 1)
 		printf("%li,", a);
-	printf("\n",);
+	printf("\n");
 
 	return (0);
 }
