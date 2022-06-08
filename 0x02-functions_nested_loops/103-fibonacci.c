@@ -9,7 +9,7 @@
 int main(void)
 {
 	int even_num = 0;
-	int sun = 1;
+	int sum = 1;
 	int a = 1;
 	int b = 1;
 
