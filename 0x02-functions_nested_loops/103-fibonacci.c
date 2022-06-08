@@ -23,7 +23,7 @@ int main(void)
 			even_num += sum;
 	}
 
-	_putchar("%d\n", even_num);
+	putchar("%d\n", even_num);
 
 	return (0);
 }
