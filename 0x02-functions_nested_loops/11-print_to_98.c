@@ -12,7 +12,7 @@ void print_to_98(int n)
 	int num1, num2;
 	if (n <= 98)
 	{
-		for (num1 = n; num1 = 98; num1++)
+		for (num1 = n; num1 <= 98; num1++)
 		{
 			if (num1 != 98)
 				printf("%d, ", num1);
