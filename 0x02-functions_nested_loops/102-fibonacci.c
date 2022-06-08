@@ -21,7 +21,6 @@ int main(void)
 	}
 	if (count % 2 == 1)
 		printf("%li,", a);
-	printf(',');
 	printf("\n");
 
 	return (0);
