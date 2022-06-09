@@ -1,4 +1,5 @@
-#include "main.h"
+#include "math.h">
+#include <stdio.h>
 
 /**
  * main - print largest prime factor
@@ -7,19 +8,19 @@
 
 int main(void)
 {
-	unsigned long num = 612852475143;
-	unsigned long divisor = 2;
+	long num = 612852475143;
+	long factor;
 
-	while (divisor < num)
+	for (factor = 2; factor <= sqrt(num); factor++)
 	{
-		if (num % divisor == 0)
+		if (num % factor == 0)
 		{
-			num /= divisor;
-			divisor = 2;
+			num = num / factor;
+			factor = 1;
 		}
-		else
-			divisor++
 	}
-	printf("%lu\n", num);
+
+	printf("%ld\n", num);
+
 	return (0);
 }
