@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - prints the minimum number of coins for an amount of money
  * @argc: should count two arguments
