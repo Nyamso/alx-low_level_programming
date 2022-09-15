@@ -1,52 +1,42 @@
 #include "lists.h"
-/**
- * insert_dnodeint_at_index - unction that inserts a new node
- * at a given position.
- * @h: address of head main
- * @idx: position to insert
- * @n: data
- * Return: node insert.
- */
-dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
-{
-	dlistint_t *inst, *corrent = *h;
-	size_t i = 0;
 
-	inst = malloc(sizeof(dlistint_t));
-	if (inst == NULL)
-		return (NULL);
-	inst->n = n;
-	inst->next = NULL;
-	inst->prev = NULL;
-	if (*h == NULL)
+/**
+ * delete_dnodeint_at_index - Deletes a node from a dlistint_t
+ *                            at a given index.
+ * @head: A pointer to the head of the dlistint_t.
+ * @index: The index of the node to delete.
+ *
+ * Return: Upon success - 1.
+ *         Otherwise - -1.
+ */
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+{
+	dlistint_t *tmp = *head;
+
+	if (*head == NULL)
+		return (-1);
+
+	for (; index != 0; index--)
 	{
-		*h = inst;
-		return (inst);
+		if (tmp == NULL)
+			return (-1);
+		tmp = tmp->next;
 	}
-	if (idx == 0)
+
+	if (tmp == *head)
 	{
-		(*h)->prev = inst, inst->next = *h, *h = inst;
-		return (inst);
+		*head = tmp->next;
+		if (*head != NULL)
+			(*head)->prev = NULL;
 	}
+
 	else
 	{
-		for (i = 1; corrent; i++)
-		{
-			if (idx == i && corrent->next != NULL)
-			{
-				inst->prev = corrent, inst->next = corrent->next;
-				corrent->next->prev = inst;
-				corrent->next = inst;
-				return (inst);
-			}
-			else if (idx == i && corrent->next == NULL)
-			{
-				corrent->next = inst, inst->prev = corrent;
-				return (inst);
-			}
-			corrent = corrent->next;
-		}
+		tmp->prev->next = tmp->next;
+		if (tmp->next != NULL)
+			tmp->next->prev = tmp->prev;
 	}
-	free(inst);
-	return (NULL);
+
+	free(tmp);
+	return (1);
 }
